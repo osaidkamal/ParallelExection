@@ -1,8 +1,8 @@
 pipeline {
     agent any
-
+        stages{
         stage("Shell Script"){
-            stages{
+            
             steps {
 //             parallel(
                 sh 'mkdir testing'
