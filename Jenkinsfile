@@ -2,6 +2,7 @@ pipeline {
     agent any
 
         stage("Shell Script"){
+            stages{
             steps {
 //             parallel(
                 sh 'mkdir testing'
@@ -12,6 +13,7 @@ pipeline {
                 }
             }
         }
+}
         
         
  
