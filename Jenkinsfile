@@ -21,7 +21,7 @@ pipeline {
             steps {
 //             parallel(
                 ws("{workspace}"){
-                echo 'testing'
+                echo 'dev'
 //                 sh 'chmod -R a+wx testing'
 //                 )
                 }
