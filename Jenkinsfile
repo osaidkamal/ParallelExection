@@ -16,8 +16,7 @@ pipeline {
             steps {
 //             parallel(
                
-                sh 'mkdir Dev'
-                sh 'ls' 
+                echo 'testing'
 //                 sh 'chmod -R a+wx testing'
 //                 )
                 }
