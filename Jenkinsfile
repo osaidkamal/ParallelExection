@@ -5,8 +5,8 @@ pipeline {
             
             steps {
 //             parallel(
-                sh 'mkdir testing'
-                sh 'mkdir testing2'
+                sh 'mkdir TestBranch'
+            
                 echo 'testing'
                 sh 'ls' 
 //                 sh 'chmod -R a+wx testing'
