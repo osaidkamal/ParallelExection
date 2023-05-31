@@ -20,11 +20,12 @@ pipeline {
             
             steps {
 //             parallel(
-               
+                ws("{workspace}"){
                 echo 'testing'
 //                 sh 'chmod -R a+wx testing'
 //                 )
                 }
+            }
             }
         }
 }
