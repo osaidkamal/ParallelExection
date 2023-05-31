@@ -1,13 +1,20 @@
 pipeline {
     agent any
         stages{
-        stage("Shell Script"){
+            
+            stage("Checkout") {
+                script{
+                
+               checkout([$class: 'GitSCM', branches: [[name: '*/${Branch}']], extensions: [], userRemoteConfigs: [[credentialsId: '2e71e8dd-67bb-4f9e-ad63-1693a71e4f3e', url: 'https://github.com/osaidkamal/ParallelExection']]])
+            }
+            }
+                stage("Shell Script"){
+           
             
             steps {
 //             parallel(
-                sh 'mkdir TestBranch'
-            
-                echo 'testing'
+               
+                sh 'mkdir Dev'
                 sh 'ls' 
 //                 sh 'chmod -R a+wx testing'
 //                 )
@@ -16,5 +23,3 @@ pipeline {
         }
 }
         
-        
- 
