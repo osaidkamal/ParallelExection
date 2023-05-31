@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    option{
+        skipDefaultCheckout()
+    }
         stages{
             
             stage("Checkout") {
@@ -16,8 +19,8 @@ pipeline {
             steps {
 //             parallel(
                
-                sh 'mkdir Dev'
-                sh 'ls' 
+                echo 'Dev'
+                
 //                 sh 'chmod -R a+wx testing'
 //                 )
                 }
