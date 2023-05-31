@@ -7,6 +7,7 @@ pipeline {
 //             parallel(
                 sh 'mkdir testing'
                 sh 'mkdir testing2'
+                echo 'testing'
                 sh 'ls' 
 //                 sh 'chmod -R a+wx testing'
 //                 )
